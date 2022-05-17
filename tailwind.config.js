@@ -7,12 +7,19 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px'
+      xl: '1440px',
+      '2xl': '1900',
     }, 
      container:{
       center: true,
     },
-    extend: {},
+    extend: {
+      colors:{
+        darkLogo: '#0841D8',
+        lightLogo: '#46B39D'
+      }
+
+    },
   },
   plugins: [],
 }

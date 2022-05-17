@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Merry</title>
-    <link rel="stylesheet" href="./css/styles.css">`
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="relative container  p-6">
+    <nav class="relative container mx-auto ">
         <!-- Flex container -->
         <div class="flex items-center justify-between">
           <!-- Logo -->
@@ -17,7 +17,7 @@
             <img src="./images/1-removebg-preview.png" alt="logo" />
           </div>
           <!-- Menu Items -->
-          <div class="hidden space-x-10 text-s md:flex">
+          <div class="hidden space-x-10 text-lg md:flex">
             <a href="#" class="hover:text-blue-700">About</a>
             <a href="#" class="hover:text-blue-700">Portfolio</a>
             <a href="#" class="hover:text-blue-700">Services</a>
@@ -26,7 +26,7 @@
           <a
             href="#"
             class="hidden p-2 px-6 pt-2 text-white bg-blue-700 rounded-full baseline hover:bg-blue-600 md:block"
-            >Lets Talk</a>
+            >Let's Talk</a>
   
           <!-- Hamburger Icon -->
           <button
@@ -52,33 +52,34 @@
       </nav>
 
       <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class=" h-screen bg-gradient-to-br from-darkLogo to-lightLogo">
       <!-- Flex Container -->
       <div
-        class="container flex flex-col-reverse items-center px-6  mx-auto mt-40 space-y-0 md:space-y-0 md:flex-row"
-      >
+        class="container flex flex-col-reverse items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row md:pt-16 md:px-0">
         <!-- Left item -->
-        <div class="flex flex-col mb-32 space-y-6 md:w-1/2">
-          <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
-            Hi, I'm Brandon Merry | Software Engineer 
+        <div class="px-4 pt-9">
+          <h1 class="max-w-md text-4xl text-white font-bold text-left leading-sung md:text-5xl">
+            Hi, I'm Brandon Merry | Software <br>Engineer</br>
           </h1>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          <p class="max-w-sm pt-6 text-sm text-white leading-normal ">
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view.
           </p>
-          <div class="flex justify-center md:justify-start">
-            <a href="#"
-              class="p-3 px-6 pt-2 text-white bg-blue-700 rounded-full baseline hover:bg-blue-500"
-              >Portfolio</a>
-          </div>
+            <a
+              href="#"
+              class="inline-block bg-white mt-8 px-8 py-2 text-darkLogo rounded-full font-bold uppercase tracking-wide text-md"
+              >View Profile</a>
+              <a
+              href="#"
+              class="inline-block bg-white mt-8 px-8 py-2 text-darkLogo rounded-full font-bold uppercase tracking-wide text-md"
+              >Let's Talk</a>
         </div>
-        <!-- Image -->
+        <!-- Image
         <div class="md:w-1/2">
-          <img src="#" alt="" />
-        </div>
+          <img src="" alt="" />
+        </div> -->
       </div>
     </section>
-
 
 </body>
 </html>
