@@ -9,9 +9,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="relative container mx-auto ">
+    <nav class="relative container max-w-lg md:max-w-4xl lg:max-w-4xl mx-auto">
         <!-- Flex container -->
-        <div class="flex items-center justify-between">
+        <div class=" flex items-center justify-between ">
           <!-- Logo -->
           <div class="">
             <img src="./images/1-removebg-preview.png" alt="logo" />
@@ -51,35 +51,40 @@
         </div>
       </nav>
 
-      <!-- Hero Section -->
-    <section id="hero" class=" h-screen bg-gradient-to-br from-darkLogo to-lightLogo">
-      <!-- Flex Container -->
-      <div
-        class="container flex flex-col-reverse items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row md:pt-16 md:px-0">
-        <!-- Left item -->
-        <div class="px-4 pt-9">
-          <h1 class="max-w-md text-4xl text-white font-bold text-left leading-sung md:text-5xl">
-            Hi, I'm Brandon Merry | Software <br>Engineer</br>
-          </h1>
-          <p class="max-w-sm pt-6 text-sm text-white leading-normal ">
-            Manage makes it simple for software teams to plan day-to-day tasks
-            while keeping the larger team goals in view.
-          </p>
-            <a
-              href="#"
-              class="inline-block bg-white mt-8 px-8 py-2 text-darkLogo rounded-full font-bold uppercase tracking-wide text-md"
-              >View Profile</a>
-              <a
-              href="#"
-              class="inline-block bg-white mt-8 px-8 py-2 text-darkLogo rounded-full font-bold uppercase tracking-wide text-md"
-              >Let's Talk</a>
+    </header>
+    <section class="pt-6 bg-gradient-to-br from-darkLogo to-lightLogo">
+        <div
+            class="lg:flex px-4 pt-9 max-w-lg md:max-w-4xl lg:max-w-4xl mx-auto"
+        >
+            <div class="lg:pt-16 pb-32">
+                <h1
+                    class="font-bold text-white text-xl xs:text-2xl lg:text-4xl leading-relaxed font-primary"
+                >
+                    Hi, I'm Brandon Merry | Software <br/> Engineer
+                </h1>
+                <p class="pt-6 text-sm text-white leading-loose lg:max-w-sm">
+                    I love solving problems, building websites and contiunous learning
+                </p>
+                <a
+                    href="#"
+                    class="inline-block bg-white mt-5 px-8 py-3 text-blue-500 rounded-full font-bold uppercase font-primary tracking-wide text-sm mr-4"
+                    >View Portfolio</a
+                >
+                <a
+                    href="#"
+                    class="inline-block mt-5 px-8 py-3 text-white border-2 border-white rounded-full font-bold uppercase font-primary tracking-wide text-sm"
+                    >Let's Talk</a
+                >
+            </div>
+            <img
+                src="images/intro-mobile.png"
+                alt=""
+                class="lg:h-64 flex-shrink-0"
+            />
         </div>
-        <!-- Image
-        <div class="md:w-1/2">
-          <img src="" alt="" />
-        </div> -->
-      </div>
     </section>
+  
+
 
 </body>
 </html>
