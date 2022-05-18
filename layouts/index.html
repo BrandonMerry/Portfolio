@@ -4,82 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Merry</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css">
+    <title>Brandon Merry</title>
+   
 </head>
-<body>
-   <div class=" mx-auto bg-gradient-to-br from-darkLogo to-lightLogo xl:max-w-10xl ">  
-    <!-- Navbar -->
-    <nav class="relative container mx-auto max-w-lg md:max-w-4xl lg:max-w-6xl  bg-transparent pt-8 px-3 md:px-10 xl:max-w-10xl ">
-        <!-- Flex container -->
-        <div class=" flex items-center justify-between ">
-          <!-- Logo -->
-          <h1 class="text-white text-4xl"> BM</h1>
-          <!-- Menu Items -->
-          <div class="hidden space-x-10 text-lg md:flex">
-            <a href="#" class="text-white hover:text-black ">About</a>
-            <a href="#" class="text-white hover:text-black ">Portfolio</a>
-            <a href="#" class="text-white hover:text-black ">Services</a>
-          </div>
-          <!-- Button -->
-          <a
-            href="#"
-            class="hidden p-2 px-6 pt-2 text-darkLogo bg-white rounded-full baseline hover:bg-blue-600 md:block"
-            >Let's Talk</a>
-  
-          <!-- Hamburger Icon -->
-          <button
-            id="menu-btn"
-            class="block hamburger md:hidden focus:outline-none"
+
+<body class="text-gray-800 antialiased" >
+  <!-- keep -->
+  <nav class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 shadow-lg">
+    <!-- keep -->
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        
+        <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-darkLogo"
+            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+            >BM</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+            <i class="text-gray-800 fas fa-bars"></i>
           </button>
         </div>
-  
-        <!-- Mobile Menu -->
-        <div class="md:hidden">
-          <div
-            id="menu"
-            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Services</a>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
+                ></i>
+                Docs</a
+              >
+            </li>
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Star</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <button
+                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                type="button"
+                style="transition: all 0.15s ease 0s;"
+              >
+                <i class="fas fa-arrow-alt-circle-down"></i> Download
+              </button>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- main  -->
+
+    <section class="header relative pt-16 items-center flex h-screen " style="max-height: 860px;">
+      <!-- content wrapper -->
+      <div class="container mx-auto items-center flex flex-wrap">
+        <!-- wrapper holding all of the text -->
+        <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+          <!-- closest box to all text -->
+          <div class="pt-32 sm:pt-0">
+            <h2 class="font-semibold text-4xl text-slate-600">A beautiful extension for TailwindCSS.</h2>
+            <p class="mt-4 text-lg leading-relaxed text-slate-500">Tailwind Starter Kit is Free and Open Source. It does not change or add any CSS to the already one from 
+              <a href="https://tailwindcss.com/?ref=creativetim" class="text-slate-600" target="_blank">TailwindCSS</a>. It features multiple HTML elements and it comes with dynamic components for ReactJS, Vue and Angular.</p>
+              <div class="mt-12">
+                <a class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-pink-500 active:bg-pink-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150" href="/learning-lab/tailwind-starter-kit/documentation/download">Get started</a>
+
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-
-    </header>
-    
-
-    <!-- Bio Section  -->
-
-    <section class="pt-6 px-6 ">
-      <div
-          class="lg:flex px-4 pt-9 mx-auto max-w-lg md:max-w-4xl lg:max-w-6xl xl:max-w-10xl ">
-          <div class="lg:pt-16 pb-32">
-              <h1
-                  class="font-bold text-white text-xl xs:text-2xl lg:text-4xl leading-relaxed font-primary">
-                  Hi, I'm Brandon Merry | Software <br/> Engineer
-              </h1>
-              <p class="pt-6 text-sm text-white leading-loose lg:max-w-sm">
-                  I love solving problems, building websites and contiunous learning
-              </p>
-              <a
-                  href="#"
-                  class="inline-block bg-white mt-5 px-8 py-3 text-blue-500 rounded-full font-bold uppercase font-primary tracking-wide text-sm mr-4"
-                  >Let's Talk</a
-              >
-          </div>
-          <!-- <img
-              src=""
-              alt=""
-              class="lg:h-64 flex-shrink-0"
-          /> -->
-      </div>
-  </section>
-
-  
+        <!-- <img class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12" src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/ill_header_3.png" alt="..." style="max-height: 860px;"> -->
+    </section>
 </body>
-</html>
