@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       colors:{
-        darkLogo: '#0841D8',
+        darkLogo: '#1C56A8',
         lightLogo: '#46B39D'
       }
 

@@ -28,9 +28,10 @@
         
         <a
             class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-darkLogo"
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-            >BM</a
-          ><button
+            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation">
+            BM
+        </a >
+          <button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"
             onclick="toggleNavbar('example-collapse-navbar')"
@@ -38,26 +39,15 @@
             <i class="text-gray-800 fas fa-bars"></i>
           </button>
         </div>
+      
         <div
           class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
-        >
-          <ul class="flex flex-col lg:flex-row list-none mr-auto">
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-                ></i>
-                Docs</a
-              >
-            </li>
-          </ul>
+          id="example-collapse-navbar">
           <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+    
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="#pablo"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
@@ -99,9 +89,9 @@
     </div>
   </nav>
 
-    <!-- main  -->
-
-    <section class="header relative pt-16 items-center flex h-screen " style="max-height: 860px;">
+    <!-- HERO -->
+  <main>
+    <section class="header relative pt-18 items-center flex h-screen px-4" style="max-height: 860px;">
       <!-- content wrapper -->
       <div class="container mx-auto items-center flex flex-wrap">
         <!-- wrapper holding all of the text -->
@@ -120,4 +110,156 @@
         </div>
         <!-- <img class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12" src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/ill_header_3.png" alt="..." style="max-height: 860px;"> -->
     </section>
+
+    <!-- Profile section  -->
+
+    <section class="relative py-20">
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <img
+              alt="..."
+              class="max-w-full rounded-2xl shadow-lg"
+              src="./images/BranodnMerry.png"
+            />
+          </div>
+          <div class="w-full md:w-6/12 ml-auto mr-auto px-4 py-4">
+            <div class="md:pr-8">
+              <h3 class=" pt-3 text-3xl font-semibold">My Skills</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                The extension comes with three pre-built pages to help you get
+                started faster. You can change the text and images and you're
+                good to go.
+              </p>
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        ><i class="fas fa-fingerprint"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        Carefully crafted components
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        ><i class="fab fa-html5"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Amazing page examples</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        ><i class="far fa-paper-plane"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Dynamic components</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- My Services -->
+
+  <section class="bg-gray-50 pt-20 pb-28 px-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold text-gray-800">Services</h1>
+            <p class="pt-2">Here's what I offer</p>
+        </div>
+        <div
+            class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"
+        >
+            <div class="relative">
+                <div
+                    class="absolute z-10 inset-0 bg-darkLogo shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                ></div>
+
+                <div
+                    class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12"
+                >
+                    <ion-icon
+                        name="phone-portrait-outline"
+                        class="text-5xl text-cyan-500"
+                    ></ion-icon>
+                    <h2 class="pt-3 font-bold text-2xl">
+                        Responsive Websites
+                    </h2>
+                    <p class="pt-3">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Consequuntur aperiam quibusdam
+                        repudiandae et necessitatibus culpa libero
+                        mollitia.
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <div
+                    class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                ></div>
+
+                <div
+                    class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12"
+                >
+                    <ion-icon
+                        name="layers-outline"
+                        class="text-5xl text-cyan-500"
+                    ></ion-icon>
+                    <h2 class="pt-3 font-bold text-2xl">Web Apps</h2>
+                    <p class="pt-3">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Consequuntur aperiam quibusdam
+                        repudiandae et necessitatibus culpa libero
+                        mollitia.
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <div
+                    class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                ></div>
+
+                <div
+                    class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12"
+                >
+                    <ion-icon
+                        name="chatbubbles-outline"
+                        class="text-5xl text-cyan-500"
+                    ></ion-icon>
+                    <h2 class="pt-3 font-bold text-2xl">
+                        Consultation
+                    </h2>
+                    <p class="pt-3">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Consequuntur aperiam quibusdam
+                        repudiandae et necessitatibus culpa libero
+                        mollitia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </main>
 </body>
