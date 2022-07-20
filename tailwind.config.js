@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       colors:{
-        BtnBlue: '#2663bf',
+        BtnBlue: '#b3c8ea',
         photoGray: '#f1f5f9',
         footGray: '#E2E8F0'
       }
